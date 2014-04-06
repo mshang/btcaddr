@@ -1,0 +1,4 @@
+btcaddr
+=======
+
+Generate bitcoin addresses
