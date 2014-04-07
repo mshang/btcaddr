@@ -1,7 +1,7 @@
 btcaddr
 =======
 
-Generate bitcoin addresses
+Generate bitcoin addresses.
 
 Installing
 ----------
@@ -31,7 +31,7 @@ You will need a running bitcoind instance.
 
 3. Get the private key associated with each address according to bitcoind.
 
-        $ grep 'address: ' btraddr.out | cut -d ' ' -f 2 | xargs -n1 -I{} -P16 bitcoin-cli dumpprivkey {} | sort > dumpprivkey.out
+        $ grep 'address: ' btcaddr.out | cut -d ' ' -f 2 | xargs -n1 -I{} -P16 bitcoin-cli dumpprivkey {} | sort > dumpprivkey.out
 
 4. Compare with the generated private keys.
 
